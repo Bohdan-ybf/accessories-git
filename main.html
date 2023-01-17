@@ -10,23 +10,97 @@
     <!-- Загалні стилі -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- cdn css для bootstrap  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- cdn css для magnific-popup (збільшення картинок при кліку)  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <!-- cdn css для slick-carousel (слик слайдер)  -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <!-- Обнуляння базових стилів -->
     <link rel="stylesheet" href="/css/reset.css">
     <!-- Адаптив css -->
-	<link rel="stylesheet" href="/css/adaptive.css">
+    <link rel="stylesheet" href="/css/adaptive.css">
 
     <title>Головна</title>
 </head>
 
 <body>
 
-    
+    <div class="container">
+        <h1 class="accessories__title">Шини та диски</h1>
+    </div>
+
+    <section class="selected__positions">
+        <div class="container">
+            <div class="selected__positions__wrapper">
+
+                <div class="selected__positions__box">
+                    <div class="selected__positions__counter">Обрано <span
+                            class="selected__positions__counter__number">33</span> товари
+                    </div>
+
+                    <div class="choose__item__wrapper">
+
+                        <!-- Конпка скинути все -->
+                        <button class="choose__item__box reset__everything__btn">
+                            <div class="choose_item">Скинути все</div>
+                        </button>
+                        <!-- END Конпка скинути все -->
+
+                        <div class="choose__item__box">
+                            <button class="choose_item__close__btn">
+                                <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.98047 4.16504L0.389648 0.507812H1.68848L3.66406 3.39258L5.63281 0.507812H6.91797L4.32715 4.16504L7.06152 8H5.7627L3.66406 4.94434L1.55176 8H0.266602L2.98047 4.16504Z"
+                                        fill="#E50923" />
+                                    <path
+                                        d="M2.98047 4.16504L3.14373 4.28057L3.22553 4.16498L3.14367 4.04943L2.98047 4.16504ZM0.389648 0.507812V0.307813H0.0028665L0.22645 0.623425L0.389648 0.507812ZM1.68848 0.507812L1.85349 0.394805L1.79391 0.307813H1.68848V0.507812ZM3.66406 3.39258L3.49905 3.50558L3.66435 3.74696L3.82926 3.50532L3.66406 3.39258ZM5.63281 0.507812V0.307813H5.52717L5.46762 0.395072L5.63281 0.507812ZM6.91797 0.507812L7.08117 0.623425L7.30475 0.307813H6.91797V0.507812ZM4.32715 4.16504L4.16395 4.04943L4.08178 4.16541L4.1643 4.28115L4.32715 4.16504ZM7.06152 8V8.2H7.44976L7.22437 7.88389L7.06152 8ZM5.7627 8L5.59783 8.11323L5.65743 8.2H5.7627V8ZM3.66406 4.94434L3.82892 4.83111L3.6646 4.59184L3.49954 4.83061L3.66406 4.94434ZM1.55176 8V8.2H1.65664L1.71628 8.11373L1.55176 8ZM0.266602 8L0.103345 7.88447L-0.119945 8.2H0.266602V8ZM3.14367 4.04943L0.552847 0.3922L0.22645 0.623425L2.81727 4.28065L3.14367 4.04943ZM0.389648 0.707812H1.68848V0.307813H0.389648V0.707812ZM1.52346 0.62082L3.49905 3.50558L3.82908 3.27957L1.85349 0.394805L1.52346 0.62082ZM3.82926 3.50532L5.79801 0.620553L5.46762 0.395072L3.49887 3.27984L3.82926 3.50532ZM5.63281 0.707812H6.91797V0.307813H5.63281V0.707812ZM6.75477 0.3922L4.16395 4.04943L4.49035 4.28065L7.08117 0.623425L6.75477 0.3922ZM4.1643 4.28115L6.89868 8.11611L7.22437 7.88389L4.48999 4.04893L4.1643 4.28115ZM7.06152 7.8H5.7627V8.2H7.06152V7.8ZM5.92756 7.88677L3.82892 4.83111L3.4992 5.05756L5.59783 8.11323L5.92756 7.88677ZM3.49954 4.83061L1.38724 7.88627L1.71628 8.11373L3.82858 5.05806L3.49954 4.83061ZM1.55176 7.8H0.266602V8.2H1.55176V7.8ZM0.429858 8.11553L3.14373 4.28057L2.81721 4.04951L0.103345 7.88447L0.429858 8.11553Z"
+                                        fill="#D8D8D8" />
+                                </svg>
+                            </button>
+                            <div class="choose_item">Rav4 2012-2019</div>
+                        </div>
+
+                        <div class="choose__item__box">
+                            <button class="choose_item__close__btn">
+                                <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.98047 4.16504L0.389648 0.507812H1.68848L3.66406 3.39258L5.63281 0.507812H6.91797L4.32715 4.16504L7.06152 8H5.7627L3.66406 4.94434L1.55176 8H0.266602L2.98047 4.16504Z"
+                                        fill="#E50923" />
+                                    <path
+                                        d="M2.98047 4.16504L3.14373 4.28057L3.22553 4.16498L3.14367 4.04943L2.98047 4.16504ZM0.389648 0.507812V0.307813H0.0028665L0.22645 0.623425L0.389648 0.507812ZM1.68848 0.507812L1.85349 0.394805L1.79391 0.307813H1.68848V0.507812ZM3.66406 3.39258L3.49905 3.50558L3.66435 3.74696L3.82926 3.50532L3.66406 3.39258ZM5.63281 0.507812V0.307813H5.52717L5.46762 0.395072L5.63281 0.507812ZM6.91797 0.507812L7.08117 0.623425L7.30475 0.307813H6.91797V0.507812ZM4.32715 4.16504L4.16395 4.04943L4.08178 4.16541L4.1643 4.28115L4.32715 4.16504ZM7.06152 8V8.2H7.44976L7.22437 7.88389L7.06152 8ZM5.7627 8L5.59783 8.11323L5.65743 8.2H5.7627V8ZM3.66406 4.94434L3.82892 4.83111L3.6646 4.59184L3.49954 4.83061L3.66406 4.94434ZM1.55176 8V8.2H1.65664L1.71628 8.11373L1.55176 8ZM0.266602 8L0.103345 7.88447L-0.119945 8.2H0.266602V8ZM3.14367 4.04943L0.552847 0.3922L0.22645 0.623425L2.81727 4.28065L3.14367 4.04943ZM0.389648 0.707812H1.68848V0.307813H0.389648V0.707812ZM1.52346 0.62082L3.49905 3.50558L3.82908 3.27957L1.85349 0.394805L1.52346 0.62082ZM3.82926 3.50532L5.79801 0.620553L5.46762 0.395072L3.49887 3.27984L3.82926 3.50532ZM5.63281 0.707812H6.91797V0.307813H5.63281V0.707812ZM6.75477 0.3922L4.16395 4.04943L4.49035 4.28065L7.08117 0.623425L6.75477 0.3922ZM4.1643 4.28115L6.89868 8.11611L7.22437 7.88389L4.48999 4.04893L4.1643 4.28115ZM7.06152 7.8H5.7627V8.2H7.06152V7.8ZM5.92756 7.88677L3.82892 4.83111L3.4992 5.05756L5.59783 8.11323L5.92756 7.88677ZM3.49954 4.83061L1.38724 7.88627L1.71628 8.11373L3.82858 5.05806L3.49954 4.83061ZM1.55176 7.8H0.266602V8.2H1.55176V7.8ZM0.429858 8.11553L3.14373 4.28057L2.81721 4.04951L0.103345 7.88447L0.429858 8.11553Z"
+                                        fill="#D8D8D8" />
+                                </svg>
+                            </button>
+                            <div class="choose_item">Rav4 2012-2019</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="filters__sort__wrapepr filters__sort__wrapepr__desc">
+                    <select class="filters__sort__select">
+                        <option value="">За рейтингом</option>
+                        <option value="">Рік випуску, за зростанням</option>
+                        <option value="">Рік випуску, по спаданню</option>
+                        <option value="">Пробіг, за зростанням</option>
+                    </select>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
 
     <!-- cdn для підключення jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -35,7 +109,9 @@
     <!-- cdn для підключення magnific-popup -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     <!-- cdn для підключення bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
     <!-- Загальний файл з JS -->
     <script src="main.js"></script>
 
