@@ -47,8 +47,6 @@ a {
 
 /* Секція обрані категорії фільтра */
 
-.selected__positions {}
-
 .selected__positions__wrapper {
   display: flex;
   justify-content: space-between;
@@ -69,8 +67,6 @@ a {
   margin-right: 15px;
   color: #656464;
 }
-
-.selected__positions__counter__number {}
 
 .choose__item__wrapper {
   display: flex;
@@ -182,14 +178,6 @@ a {
   align-items: flex-start;
   align-content: flex-start;
 }
-
-.filter__and__directory {}
-
-.filter__and__directory__wrapper {}
-
-.filterbar__wrapper {}
-
-.catalog__item__wrapper {}
 
 .catalog__item__box {
   width: 30%;
@@ -431,6 +419,8 @@ a {
     font-size: 9px;
   }
 }
+
+
 
 /* --------------------------------------------------------------------- */
 
