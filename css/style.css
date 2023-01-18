@@ -180,6 +180,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  align-content: flex-start;
 }
 
 .filter__and__directory {}
@@ -357,7 +358,7 @@ a {
 }
 
 .product__information__wrapper {
-  margin: 30px;
+  margin: 30px 15px;
   width: 100%;
 }
 
