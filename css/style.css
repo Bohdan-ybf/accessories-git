@@ -244,7 +244,7 @@ a {
 .catalog__item__price__old::before {
   content: "";
   width: 100%;
-  top: 10px;
+  top: 50%;
   height: 1px;
   background-color: #898989;
   position: absolute;
@@ -273,6 +273,7 @@ a {
 
 .catalog__item__status {
   display: flex;
+  align-items: center;
 }
 
 .catalog__item__status>svg {
@@ -305,6 +306,68 @@ a {
 }
 
 /* END Каталог товаров */
+
+.filter__and__directory__mobile {
+  display: none;
+}
+
+.filter__and__directory__mobile__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.filters__sort__select__mobile {
+  color: #A3A3A3;
+  text-align: right;
+  padding: 5px 10px 5px 35px;
+  margin: 0px;
+}
+
+.filters__sort__select__mobile__select {
+  position: relative;
+}
+
+.filters__sort__select__mobile__select>svg {
+  position: absolute;
+  left: 10px;
+  top: 31%;
+}
+
+.filter__and__directory__mobile__btn {
+  background-color: transparent;
+  border: 1px solid #E2E2E2;
+  padding: 5px 5px 5px 33px;
+  color: #A3A3A3;
+  position: relative;
+}
+
+.filter__and__directory__mobile__btn::before {
+  content: "";
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDE3IDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDcuNDI4NTdDMCA3LjI3NzAyIDAuMDc0NjI3OSA3LjEzMTY3IDAuMjA3NDY2IDcuMDI0NTFDMC4zNDAzMDQgNi45MTczNSAwLjUyMDQ3MiA2Ljg1NzE0IDAuNzA4MzMzIDYuODU3MTRINC45NTgzM0M1LjE0NjE5IDYuODU3MTQgNS4zMjYzNiA2LjkxNzM1IDUuNDU5MiA3LjAyNDUxQzUuNTkyMDQgNy4xMzE2NyA1LjY2NjY3IDcuMjc3MDIgNS42NjY2NyA3LjQyODU3QzUuNjY2NjcgNy41ODAxMiA1LjU5MjA0IDcuNzI1NDcgNS40NTkyIDcuODMyNjNDNS4zMjYzNiA3LjkzOTggNS4xNDYxOSA4IDQuOTU4MzMgOEgwLjcwODMzM0MwLjUyMDQ3MiA4IDAuMzQwMzA0IDcuOTM5OCAwLjIwNzQ2NiA3LjgzMjYzQzAuMDc0NjI3OSA3LjcyNTQ3IDAgNy41ODAxMiAwIDcuNDI4NTdaTTAgNEMwIDMuODQ4NDUgMC4wNzQ2Mjc5IDMuNzAzMSAwLjIwNzQ2NiAzLjU5NTk0QzAuMzQwMzA0IDMuNDg4NzggMC41MjA0NzIgMy40Mjg1NyAwLjcwODMzMyAzLjQyODU3SDEwLjYyNUMxMC44MTI5IDMuNDI4NTcgMTAuOTkzIDMuNDg4NzggMTEuMTI1OSAzLjU5NTk0QzExLjI1ODcgMy43MDMxIDExLjMzMzMgMy44NDg0NSAxMS4zMzMzIDRDMTEuMzMzMyA0LjE1MTU1IDExLjI1ODcgNC4yOTY5IDExLjEyNTkgNC40MDQwNkMxMC45OTMgNC41MTEyMiAxMC44MTI5IDQuNTcxNDMgMTAuNjI1IDQuNTcxNDNIMC43MDgzMzNDMC41MjA0NzIgNC41NzE0MyAwLjM0MDMwNCA0LjUxMTIyIDAuMjA3NDY2IDQuNDA0MDZDMC4wNzQ2Mjc5IDQuMjk2OSAwIDQuMTUxNTUgMCA0Wk0wIDAuNTcxNDI5QzAgMC40MTk4NzYgMC4wNzQ2Mjc5IDAuMjc0NTMxIDAuMjA3NDY2IDAuMTY3MzY4QzAuMzQwMzA0IDAuMDYwMjA0IDAuNTIwNDcyIDAgMC43MDgzMzMgMEgxNi4yOTE3QzE2LjQ3OTUgMCAxNi42NTk3IDAuMDYwMjA0IDE2Ljc5MjUgMC4xNjczNjhDMTYuOTI1NCAwLjI3NDUzMSAxNyAwLjQxOTg3NiAxNyAwLjU3MTQyOUMxNyAwLjcyMjk4MSAxNi45MjU0IDAuODY4MzI2IDE2Ljc5MjUgMC45NzU0ODlDMTYuNjU5NyAxLjA4MjY1IDE2LjQ3OTUgMS4xNDI4NiAxNi4yOTE3IDEuMTQyODZIMC43MDgzMzNDMC41MjA0NzIgMS4xNDI4NiAwLjM0MDMwNCAxLjA4MjY1IDAuMjA3NDY2IDAuOTc1NDg5QzAuMDc0NjI3OSAwLjg2ODMyNiAwIDAuNzIyOTgxIDAgMC41NzE0MjlaIiBmaWxsPSIjQTNBM0EzIi8+Cjwvc3ZnPgo=);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 15px;
+  height: 11px;
+  left: 10px;
+  top: 31%;
+}
+
+.product__information__wrapper {
+  margin: 30px;
+  width: 100%;
+}
+
+.product__information__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 23px;
+  color: #504F4F;
+}
 
 @media (max-width: 1400px) {
   .catalog__item__wrapper {
@@ -342,13 +405,30 @@ a {
   .catalog__item__wrapper {
     width: 100%;
   }
+
+  .filter__and__directory__mobile {
+    display: block;
+  }
+
+  .product__information__wrapper {
+    margin: 30px 10px;
+  }
 }
 
 @media (max-width: 768px) {
   .catalog__item__box {
     width: 47%;
   }
+}
 
+@media (max-width: 475px) {
+  .catalog__item__status__in__stock {
+    font-size: 12px;
+  }
+
+  .catalog__item__status__product__to__order {
+    font-size: 9px;
+  }
 }
 
 /* --------------------------------------------------------------------- */
