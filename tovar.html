@@ -33,6 +33,99 @@
     </div>
 
 
+    <section class="product__one">
+        <div class="container">
+            <div class="product__one__wrapper">
+
+                <div class="product__one__slider">
+                    <div style="background-image: url(https://auto.today/media/res/4/9/1/1/5/49115.pcd7lc.1280.jpg);"
+                        class="product__one__slider__img"></div>
+                    <div style="background-image: url(https://autoshini.com/images/stories/shininews/2016/07/1307.jpg);"
+                        class="product__one__slider__img"></div>
+                    <div style="background-image: url(https://autoshini.com/images/stories/shininews/2016/07/1307.jpg);"
+                        class="product__one__slider__img"></div>
+                </div>
+
+                <div class="product__one__info__wrapper">
+
+                    <div class="product__one__info__status">
+                        <!-- В наявності -->
+                        <div class="catalog__item__status">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z"
+                                    fill="#1AAF29" />
+                                <path d="M8.66667 3L4.66667 6.6L3.33333 5.4L2 6.6L4.66667 9L10 4.2L8.66667 3Z"
+                                    fill="white" />
+                            </svg>
+                            <span class="catalog__item__status__in__stock">В наявності</span>
+                        </div>
+
+                        <!-- Товар під замовлення -->
+                        <!-- <div class="catalog__item__status">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z" fill="black"/>
+                                <path d="M6.63037 7.04004H5.85254L5.6416 2.5752H6.84131L6.63037 7.04004ZM5.58887 8.45508C5.58887 8.21484 5.65039 8.04639 5.77344 7.94971C5.89941 7.8501 6.05322 7.80029 6.23486 7.80029C6.41357 7.80029 6.56592 7.8501 6.69189 7.94971C6.81787 8.04639 6.88086 8.21484 6.88086 8.45508C6.88086 8.68945 6.81787 8.85938 6.69189 8.96484C6.56592 9.06738 6.41357 9.11865 6.23486 9.11865C6.05322 9.11865 5.89941 9.06738 5.77344 8.96484C5.65039 8.85938 5.58887 8.68945 5.58887 8.45508Z" fill="white"/>
+                                </svg>  
+                            <span class="catalog__item__status__product__to__order">Товар під замовлення</span>
+                        </div> -->
+                        <div class="product__one__info__rating">рейтинг</div>
+                    </div>
+
+                    <div class="product__one__info__oldprice__like__wrapper">
+
+                        <div class="product__one__info__oldprice__wrapper">
+                            <span>5300 ₴</span>
+                            <p>економия <span>59 ₴</span></p>
+                        </div>
+
+                        <button class="product__one__info__like">У список побажань</button>
+                    </div>
+
+                    <div class="product__one__info__price__and__buy__btn">
+                        <p class="product__one__info__price">5241 <span>₴</span></p>
+                        <button class="product__one__info__buy__btn">Купити</button>
+                    </div>
+
+                    <div class="product__one__info__delivery__map">
+                        <p class="product__one__info__delivery__map__name">Доставка</p>
+                        <div class="product__one__info__delivery__map__content">
+                            <div class="product__one__info__delivery__content">
+                                <p class="product__one__info__sub__text product__one__info__sub__text__line">Самовивоз:
+                                    Одеса, Данкевича 7</p>
+                                <p class="product__one__info__sub__text">Нова Пошта</p>
+                            </div>
+                            <a class="product__one__info__map" href="#">показати на карті</a>
+                        </div>
+
+                    </div>
+
+                    <div class="product__one__info__payment__wrapper">
+                        <p class="product__one__info__payment__name">Оплата</p>
+                        <div class="product__one__info__delivery__map__content">
+                            <p class="payment__text product__one__info__sub__text product__one__info__sub__text">Google
+                                Pay, Картою онлайн, Apple Pay, Visa, Mastercard</p>
+                        </div>
+                    </div>
+
+                    <div class="product__one__info__seller__wrapper">
+                        <p class="product__one__info__seller__name">Продавець</p>
+                        <div class="product__one__info__delivery__map__content">
+                            <p class="seller__text product__one__info__sub__text">Тойота Центр Одеса ВІДІ Пальміра</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
     <!-- cdn для підключення jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!-- cdn для підключення slick-carousel -->
@@ -45,6 +138,17 @@
     </script>
     <!-- Загальний файл з JS -->
     <script src="main.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.product__one__slider').slick({
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: false
+            });
+        });
+    </script>
 
 </body>
 

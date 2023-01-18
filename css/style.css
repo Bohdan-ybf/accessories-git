@@ -363,6 +363,185 @@ a {
   color: #504F4F;
 }
 
+/* Сторінка товара */
+.product__one__slider {
+  width: 48%;
+}
+
+.product__one__slider>.slick-prev {
+  left: 5px;
+  z-index: 10;
+}
+
+.product__one__slider>.slick-next {
+  right: 5px;
+  z-index: 10;
+}
+
+.product__one__slider>.slick-prev:before,
+.product__one__slider>.slick-next:before {
+  color: #504F4F;
+}
+
+.product__one__slider__img {
+  width: 100%;
+  height: 325px !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.product__one__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product__one__info__wrapper {
+  width: 48%;
+  background: #FAFAFA;
+  border-radius: 3px;
+  padding: 25px;
+}
+
+.product__one__info__status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.product__one__info__oldprice__like__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 15px 0px;
+}
+
+.product__one__info__oldprice__wrapper>span {
+  font-weight: 700;
+  font-size: 24px;
+  color: #AAAAAA;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.product__one__info__oldprice__wrapper>span::before {
+  content: "";
+  width: 100%;
+  top: 50%;
+  height: 1px;
+  background-color: #898989;
+  position: absolute;
+}
+
+.product__one__info__oldprice__wrapper>p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #595959;
+}
+
+.product__one__info__like {
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+}
+
+.product__one__info__price__and__buy__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+
+.product__one__info__price {
+  font-weight: 600;
+  font-size: 40px;
+
+  color: #E50923;
+}
+
+.product__one__info__buy__btn {
+  background: #E50923;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  padding: 10px 50px;
+}
+
+.product__one__info__delivery__map {
+  display: flex;
+}
+
+.product__one__info__delivery__map,
+.product__one__info__payment__wrapper,
+.product__one__info__seller__wrapper {
+  margin: 15px 0px;
+}
+
+.product__one__info__delivery__map__name,
+.product__one__info__payment__name,
+.product__one__info__seller__name {
+  width: 30%;
+  font-weight: 600;
+  font-size: 14px;
+  color: #000000;
+}
+
+
+
+.product__one__info__sub__text {
+  font-weight: 600;
+  font-size: 12px;
+
+  color: #504F4F;
+}
+
+.product__one__info__sub__text__line {
+  border-bottom: 1px solid #626262;
+  padding-bottom: 5px;
+  margin: 5px 0px;
+}
+
+.product__one__info__delivery__map__content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.product__one__info__map {
+  font-weight: 600;
+  font-size: 12px;
+  color: #AAAAAA;
+  position: relative;
+}
+
+.product__one__info__map::before {
+  content: "";
+  position: absolute;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjYyNSA3LjEyNUMxNC42MjUgNS42MzMxNiAxNC4wMzI0IDQuMjAyNDIgMTIuOTc3NSAzLjE0NzUyQzExLjkyMjYgMi4wOTI2MyAxMC40OTE4IDEuNSA5IDEuNUM3LjUwODE2IDEuNSA2LjA3NzQyIDIuMDkyNjMgNS4wMjI1MiAzLjE0NzUyQzMuOTY3NjMgNC4yMDI0MiAzLjM3NSA1LjYzMzE2IDMuMzc1IDcuMTI1QzMuMzc1IDkuNDMyNSA1LjIyMTI1IDEyLjQ0IDkgMTYuMDQyNUMxMi43Nzg4IDEyLjQ0IDE0LjYyNSA5LjQzMjUgMTQuNjI1IDcuMTI1Wk05IDE3Ljc1QzQuNDE2MjUgMTMuNTgzNyAyLjEyNSAxMC4wNDEzIDIuMTI1IDcuMTI1QzIuMTI1IDUuMzAxNjQgMi44NDkzMyAzLjU1Mjk1IDQuMTM4NjQgMi4yNjM2NEM1LjQyNzk1IDAuOTc0MzI4IDcuMTc2NjQgMC4yNSA5IDAuMjVDMTAuODIzNCAwLjI1IDEyLjU3MiAwLjk3NDMyOCAxMy44NjE0IDIuMjYzNjRDMTUuMTUwNyAzLjU1Mjk1IDE1Ljg3NSA1LjMwMTY0IDE1Ljg3NSA3LjEyNUMxNS44NzUgMTAuMDQxMyAxMy41ODM3IDEzLjU4MzcgOSAxNy43NVoiIGZpbGw9IiNFNTA5MjMiLz4KPHBhdGggZD0iTTkgNy43NUM5LjMzMTUyIDcuNzUgOS42NDk0NiA3LjYxODMgOS44ODM4OCA3LjM4Mzg4QzEwLjExODMgNy4xNDk0NiAxMC4yNSA2LjgzMTUyIDEwLjI1IDYuNUMxMC4yNSA2LjE2ODQ4IDEwLjExODMgNS44NTA1NCA5Ljg4Mzg4IDUuNjE2MTJDOS42NDk0NiA1LjM4MTcgOS4zMzE1MiA1LjI1IDkgNS4yNUM4LjY2ODQ4IDUuMjUgOC4zNTA1NCA1LjM4MTcgOC4xMTYxMiA1LjYxNjEyQzcuODgxNyA1Ljg1MDU0IDcuNzUgNi4xNjg0OCA3Ljc1IDYuNUM3Ljc1IDYuODMxNTIgNy44ODE3IDcuMTQ5NDYgOC4xMTYxMiA3LjM4Mzg4QzguMzUwNTQgNy42MTgzIDguNjY4NDggNy43NSA5IDcuNzVaTTkgOUM4LjMzNjk2IDkgNy43MDEwNyA4LjczNjYxIDcuMjMyMjMgOC4yNjc3N0M2Ljc2MzM5IDcuNzk4OTMgNi41IDcuMTYzMDQgNi41IDYuNUM2LjUgNS44MzY5NiA2Ljc2MzM5IDUuMjAxMDcgNy4yMzIyMyA0LjczMjIzQzcuNzAxMDcgNC4yNjMzOSA4LjMzNjk2IDQgOSA0QzkuNjYzMDQgNCAxMC4yOTg5IDQuMjYzMzkgMTAuNzY3OCA0LjczMjIzQzExLjIzNjYgNS4yMDEwNyAxMS41IDUuODM2OTYgMTEuNSA2LjVDMTEuNSA3LjE2MzA0IDExLjIzNjYgNy43OTg5MyAxMC43Njc4IDguMjY3NzdDMTAuMjk4OSA4LjczNjYxIDkuNjYzMDQgOSA5IDlaTTE1Ljc1IDEyLjc1TDE3Ljc1IDE3Ljc1SDEyLjEyNVYxNi41SDUuODc1VjE3Ljc1SDAuMjVMMi4yNSAxMi43NUgxNS43NVpNMTQuNDAzNyAxMi43NUgzLjU5NjI1TDIuMDk2MjUgMTYuNUgxNS45MDM3TDE0LjQwMzcgMTIuNzVaIiBmaWxsPSIjRTUwOTIzIi8+Cjwvc3ZnPgo=);
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: -25px;
+  top: -2px;
+}
+
+.product__one__info__payment__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.product__one__info__seller__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* END Сторінка товара */
+
 @media (max-width: 1400px) {
   .catalog__item__wrapper {
     justify-content: space-between;
