@@ -967,6 +967,13 @@ a {
   color: #828282;
 }
 
+.basket__popup__accordion__content__price__btn__wrapper {
+  width: 37%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .basket__popup__accordion__content__price {
   font-size: 15px;
   letter-spacing: 0.01em;
@@ -1046,6 +1053,22 @@ a {
   margin: 15px 0px;
 }
 
+.basket__popup__selected__item__wrapper__box {
+  width: 100%;
+  display: flex;
+}
+
+.test__box {
+  display: flex;
+  margin-left: auto;
+  width: 39%;
+}
+
+.basket__popup__selected__item__wrapper__plus {
+  display: flex;
+  align-items: center;
+}
+
 .basket__popup__selected__item__img {
   background-position: center;
   background-repeat: no-repeat;
@@ -1065,7 +1088,35 @@ a {
   font-weight: 400;
   font-size: 15px;
   color: #000000;
+}
+
+.basket__popup__selected__item__price__wrapper {
+  display: flex;
+  flex-direction: column;
   margin-left: 100px;
+}
+
+.basket__popup__selected__old__price {
+  font-weight: 700;
+  font-size: 12px;
+  color: #AAAAAA;
+  position: relative;
+}
+
+.basket__popup__selected__old__price::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  top: 50%;
+  background-color: #AAAAAA;
+}
+
+.basket__popup__selected__item__current__price {
+  font-weight: 600;
+  font-size: 15px;
+  margin: 5px 0px;
+  color: #E50923;
 }
 
 .basket__popup__selected__item__delete__btn {
@@ -1076,6 +1127,7 @@ a {
   text-transform: uppercase;
   color: #898989;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 .basket__popup__btn__down__wrapper {
@@ -1090,6 +1142,8 @@ a {
   margin-left: auto;
   align-items: center;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 .basket__popup__btn__down__continue {
@@ -1117,6 +1171,122 @@ a {
   background-color: #E50923;
   color: #ffff;
   padding: 10px 20px;
+}
+
+@media (max-width: 1215px) {
+  .basket__popup__selected__item__price__wrapper {
+    margin-left: 0px;
+  }
+
+  .basket__popup__selected__item__title {
+    width: 50%;
+  }
+}
+
+@media (max-width: 991px) {
+  .basket__popup {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .basket__popup__offer,
+  .basket__popup__choice__wrapper,
+  .basket__popup__selected__item__title__wrapper,
+  .basket__popup__selected__item,
+  .basket__popup__btn__down__wrapper {
+    padding: 0px 15px;
+  }
+
+  .basket__popup__container {
+    padding: 0px 0px 10px 0px;
+  }
+
+  .basket__popup__accordion__content__price__btn__wrapper {
+    width: 30%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  .basket__popup__accordion__item .basket__popup__accordion__content {
+    padding: 10px 15px;
+  }
+
+  .basket__popup__accordion__content__name {
+    width: 70%;
+  }
+
+  .basket__popup__accordion__content__add__btn {
+    margin: 5px 0px;
+  }
+
+  .basket__popup__selected__item__seller {
+    display: none;
+  }
+
+  .basket__popup__selected__item__depot {
+    font-weight: 400;
+    margin-left: 0;
+  }
+
+  .basket__popup__selected__item__wrapper__box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .basket__popup__selected__item__title {
+    width: 85%;
+    margin-left: 0px;
+  }
+
+  .basket__popup__selected__item__img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .basket__popup__selected__item__wrapper__box {
+    position: relative;
+  }
+
+  .basket__popup__selected__item__delete__btn__wrapper {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  .basket__popup__selected__item__delete__btn {
+    display: none;
+  }
+
+}
+
+@media (max-width: 545px) {
+  .basket__popup__btn__down__container {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .basket__popup__btn__down__wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .basket__popup__btn__down__continue {
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  .basket__popup__btn__down__container {
+    width: 100%;
+  }
+
+  .basket__popup__container {
+    padding: 0px;
+  }
 }
 
 /* END Корзина */

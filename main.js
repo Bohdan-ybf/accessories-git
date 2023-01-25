@@ -10,7 +10,7 @@ $(function () {
 			$(".filter__accordion__title").removeClass("filter__accordion-active");
 			$('.filter__accordion__arrow').removeClass('filter__accordion__rotate');
 		}
-		
+
 		$this.toggleClass("filter__accordion-active");
 		$this.next().slideToggle();
 		$('.filter__accordion__arrow', this).toggleClass('filter__accordion__rotate');
@@ -37,10 +37,11 @@ $(document).ready(function () {
 
 // ---------------------
 
-$(function() {
-	
-	//BEGIN
-	$(".basket__popup__accordion__title").on("click", function(e) {
+
+// Аордіон для кошика 
+$(function () {
+
+	$(".basket__popup__accordion__title").on("click", function (e) {
 
 		e.preventDefault();
 		var $this = $(this);
@@ -53,8 +54,7 @@ $(function() {
 
 		$this.toggleClass("basket__popup__accordion-active");
 		$this.next().slideToggle();
-		$('.basket__popup__accordion__arrow',this).toggleClass('basket__popup__accordion__rotate');
+		$('.basket__popup__accordion__arrow', this).toggleClass('basket__popup__accordion__rotate');
 	});
-	//END
-	
+
 });
