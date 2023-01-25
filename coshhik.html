@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Обнуляння базових стилів -->
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <div class="container basket__popup__wrapper">
+        <div class="basket__popup">
+            <div class="basket__popup__header">
+                <svg class="basket__popup__check__mark__svg" width="33" height="44" viewBox="0 0 33 44" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.68139e-07 42.625V5.5C3.68139e-07 4.04131 0.579463 2.64236 1.61091 1.61091C2.64236 0.579463 4.04131 0 5.5 0L27.5 0C28.9587 0 30.3576 0.579463 31.3891 1.61091C32.4205 2.64236 33 4.04131 33 5.5V42.625C33.0002 42.8638 32.9382 43.0985 32.8201 43.306C32.702 43.5135 32.5319 43.6867 32.3265 43.8086C32.1212 43.9304 31.8876 43.9966 31.6489 44.0008C31.4102 44.0049 31.1745 43.9469 30.965 43.8322L16.5 35.9398L2.035 43.8322C1.82553 43.9469 1.58983 44.0049 1.35109 44.0008C1.11235 43.9966 0.878809 43.9304 0.673452 43.8086C0.468096 43.6867 0.298003 43.5135 0.179918 43.306C0.0618324 43.0985 -0.000174333 42.8638 3.68139e-07 42.625ZM24.3485 16.0985C24.6067 15.8403 24.7517 15.4901 24.7517 15.125C24.7517 14.7599 24.6067 14.4097 24.3485 14.1515C24.0903 13.8933 23.7401 13.7483 23.375 13.7483C23.0099 13.7483 22.6597 13.8933 22.4015 14.1515L15.125 21.4307L11.9735 18.2765C11.8457 18.1487 11.6939 18.0472 11.5269 17.9781C11.3598 17.9089 11.1808 17.8733 11 17.8733C10.8192 17.8733 10.6402 17.9089 10.4731 17.9781C10.3061 18.0472 10.1543 18.1487 10.0265 18.2765C9.89866 18.4043 9.79725 18.5561 9.72806 18.7231C9.65887 18.8902 9.62326 19.0692 9.62326 19.25C9.62326 19.4308 9.65887 19.6098 9.72806 19.7769C9.79725 19.9439 9.89866 20.0957 10.0265 20.2235L14.1515 24.3485C14.2792 24.4765 14.431 24.5781 14.598 24.6475C14.7651 24.7168 14.9441 24.7525 15.125 24.7525C15.3059 24.7525 15.4849 24.7168 15.652 24.6475C15.819 24.5781 15.9708 24.4765 16.0985 24.3485L24.3485 16.0985Z"
+                        fill="#1AAF29" />
+                </svg>
+                <p class="basket__popup__title">Додано до кошика </p>
+                <button class="basket__popup__close__btn">X</button>
+
+
+            </div>
+            <div class="basket__popup__container">
+                <div class="basket__popup__offer">
+                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.8552 7.567C18.5757 7.85224 18.4191 8.23573 18.4191 8.63514C18.4191 9.03456 18.5757 9.41805 18.8552 9.70329L21.2967 12.1448C21.5819 12.4243 21.9654 12.5809 22.3649 12.5809C22.7643 12.5809 23.1478 12.4243 23.433 12.1448L29.1857 6.39205C29.953 8.08763 30.1853 9.97678 29.8517 11.8077C29.5181 13.6387 28.6344 15.3245 27.3184 16.6405C26.0024 17.9565 24.3166 18.8402 22.4856 19.1738C20.6547 19.5074 18.7655 19.2751 17.0699 18.5078L6.52583 29.0519C5.91879 29.659 5.09545 30 4.23696 30C3.37846 30 2.55513 29.659 1.94808 29.0519C1.34104 28.4449 1 27.6215 1 26.763C1 25.9045 1.34104 25.0812 1.94808 24.4742L12.4922 13.9301C11.7249 12.2345 11.4926 10.3453 11.8262 8.51438C12.1598 6.68341 13.0435 4.99759 14.3595 3.68159C15.6755 2.36559 17.3613 1.4819 19.1923 1.1483C21.0232 0.814689 22.9124 1.04701 24.608 1.81429L18.8705 7.55174L18.8552 7.567Z"
+                            stroke="#898989" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p class="basket__popup__sub__title">Бажаєте встановити аксесуар?</p>
+                </div>
+                <div class="basket__popup__choice__wrapper">
+                    <p>Оберіть автомобіль</p>
+                    <p>Ціна встановлення</p>
+                    <span></span>
+                </div>
+
+                <div class="basket__popup__selection__menu__wrapper">
+
+                    <div class="basket__popup__selection__menu__content">
+                        <div class="basket__popup__accordion">
+                            <div class="basket__popup__accordion__item">
+                                <div class="basket__popup__accordion__title">
+                                    <div class="basket__popup__accordion__arrow"></div>
+                                    <span class="basket__popup__accordion__title-text">RAV4</span>
+                                </div>
+
+                                <div class="basket__popup__accordion__content">
+                                    <div class="basket__popup__accordion__content__wrapper">
+                                        <span class="basket__popup__accordion__content__name">/ 2021-... / Дизель 3.3 /
+                                            Автоматична 10 ст./4WD / Автоматична 10 ст./4WD</span>
+                                        <span class="basket__popup__accordion__content__price">24672.10 ₴</span>
+                                        <button class="basket__popup__accordion__content__add__btn">+ Додати</button>
+                                    </div>
+
+                                    <div class="basket__popup__accordion__content__wrapper">
+                                        <span class="basket__popup__accordion__content__name">/ 2021-... / Дизель 3.3 /
+                                            Автоматична 10 ст./4WD / Автоматична 10 ст./4WD</span>
+                                        <span class="basket__popup__accordion__content__price">24672.10 ₴</span>
+                                        <button class="basket__popup__accordion__content__add__btn">+ Додати</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="basket__popup__selection__menu__content">
+                        <div class="basket__popup__accordion">
+                            <div class="basket__popup__accordion__item">
+                                <div class="basket__popup__accordion__title">
+                                    <div class="basket__popup__accordion__arrow"></div>
+                                    <span class="basket__popup__accordion__title-text">RAV4</span>
+                                </div>
+
+                                <div class="basket__popup__accordion__content">
+                                    <div class="basket__popup__accordion__content__wrapper">
+                                        <span class="basket__popup__accordion__content__name">/ 2021-... / Дизель 3.3 /
+                                            Автоматична 10 ст./4WD / Автоматична 10 ст./4WD</span>
+                                        <span class="basket__popup__accordion__content__price">24672.10 ₴</span>
+                                        <button class="basket__popup__accordion__content__add__btn">+ Додати</button>
+                                    </div>
+
+                                    <div class="basket__popup__accordion__content__wrapper">
+                                        <span class="basket__popup__accordion__content__name">/ 2021-... / Дизель 3.3 /
+                                            Автоматична 10 ст./4WD / Автоматична 10 ст./4WD</span>
+                                        <span class="basket__popup__accordion__content__price">24672.10 ₴</span>
+                                        <button class="basket__popup__accordion__content__add__btn">+ Додати</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="basket__popup__selected__item">
+                    <div class="basket__popup__selected__item__title__wrapper">
+                        <p class="basket__popup__selected__item__seller">Продавець:</p>
+                        <p class="basket__popup__selected__item__depot">Тойота Центр Одеса ВІДІ Пальміра</p>
+                    </div>
+                    <div class="basket__popup__selected__item__wrapper">
+                        <div style="background-image:url(https://static6.depositphotos.com/1139310/626/i/600/depositphotos_6268868-stock-photo-wheels-for-the-sports-car.jpg);"
+                            class="basket__popup__selected__item__img"></div>
+                        <p class="basket__popup__selected__item__title">Шини R15 4x100 5.5 ET 35 DAA 67.1 BR</p>
+                        <span class="basket__popup__selected__item__price">5 241 ₴</span>
+                    </div>
+                    <div class="basket__popup__selected__item__wrapper">
+                        <div style="background-image:url(https://media.istockphoto.com/id/1306250054/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D0%B3%D0%B0%D0%B5%D1%87%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BB%D1%8E%D1%87-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%B8%D0%BB%D0%BB%D1%8E%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-%D0%B3%D0%B0%D0%B5%D1%87%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BB%D1%8E%D1%87-%D0%BE%D1%82-%D0%BF%D1%80%D0%B0%D0%B7%D0%B4%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F.jpg?s=612x612&w=0&k=20&c=7fMnHOCNK5uTpYr7QtFTl1n69Pjp99IIBy2Gvr_O3NM=);"
+                            class="basket__popup__selected__item__img"></div>
+                        <p class="basket__popup__selected__item__title">Шини R15 4x100 5.5 ET 35 DAA 67.1 BR</p>
+                        <span class="basket__popup__selected__item__price">5 241 ₴</span>
+                        <div class="basket__popup__selected__item__delete__btn__wrapper">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.1429 5.85714L5.85714 13.1429M5.85714 5.85714L13.1429 13.1429M1 1H18V18H1V1Z"
+                                    stroke="#8C8C8C" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <button class="basket__popup__selected__item__delete__btn">видалити</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="basket__popup__btn__down__wrapper">
+                    <button class="basket__popup__btn__down__continue">Продовжити покупки</button>
+                    <div class="basket__popup__btn__down__container">
+                        <span class="basket__popup__btn__down__container__price">29 913 ₴</span>
+                        <a class="basket__popup__btn__down__container__continue__basket" href="#">Перейти в кошик</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- cdn для підключення jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- cdn для підключення slick-carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- cdn для підключення magnific-popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <!-- cdn для підключення bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- Загальний файл з JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
