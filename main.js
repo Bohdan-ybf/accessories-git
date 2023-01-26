@@ -1,3 +1,5 @@
+// Аккордіон для фільтра
+
 $(function () {
 
 	$(".filter__accordion__title").on("click", function (e) {
@@ -34,11 +36,8 @@ $(document).ready(function () {
 });
 
 
-
-// ---------------------
-
-
 // Аордіон для кошика 
+
 $(function () {
 
 	$(".basket__popup__accordion__title").on("click", function (e) {
@@ -58,3 +57,31 @@ $(function () {
 	});
 
 });
+
+// Виклик модалки і її закриття 
+
+let basketPopup = document.querySelector(".basket__popup__wrapper");
+let moreDetailsButtons = document.querySelectorAll(".modal-test");
+let closeBasketBtn = document.querySelector(".basket__popup__close__btn");
+
+moreDetailsButtons.forEach(item => {
+	item.addEventListener("click", openBasketPopup)
+})
+
+function openBasketPopup() {
+	basketPopup.classList.add("show__basket__popup");
+	basketPopup.classList.remove("hide__basket__popup");
+}
+
+function closeBasketPopup() {
+	basketPopup.classList.remove("show__basket__popup");
+	basketPopup.classList.add("hide__basket__popup");
+}
+
+closeBasketBtn.addEventListener("click", closeBasketPopup);
+
+basketPopup.addEventListener("click", function (e) {
+	if (e.target === basketPopup) {
+		closeBasketPopup()
+	}
+})
